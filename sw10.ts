@@ -4,7 +4,7 @@
 //% weight=99 color=#000000 icon="\uf2c9" block="SW10"
 namespace SW10 {
     // Device I2C Address
-    let LM75B_I2C_ADDR = 0x48
+    let SW10_I2C_ADDR = 0x48
 
     // Register Defines
     const LM75B_REG_CONF = 0x01
@@ -26,19 +26,19 @@ namespace SW10 {
     function readTemperature(): number {
         let buf: Buffer = pins.createBuffer(1);
         buf[0] = LM75B_REG_TEMP;
-        pins.i2cWriteBuffer(LM75B_I2C_ADDR, buf, false);
-        let data = pins.i2cReadNumber(LM75B_I2C_ADDR, NumberFormat.UInt16BE, false);
+        pins.i2cWriteBuffer(SW10_I2C_ADDR, buf, false);
+        let data = pins.i2cReadNumber(SW10_I2C_ADDR, NumberFormat.UInt16BE, false);
         return ((data >> 5) / 8);
     }
 
     /**
     * Used to set the Alternative address of the SW10
-    * @param chipAddress [72-80] The I2C address of your LM75B; eg: 72 
+    * @param SW10_ADDR. The I2C address of your LM75B;
     */
-    //% blockId="setAddress" block="set device address %SW10_ADDR"
+    //% blockId="SW10Address" block="set device address %SW10_ADDR"
     //% weight=99
-    export function setAddress(SW10_ADDR: SW10_ADDR = 1): void {
-        LM75B_I2C_ADDR = SW10_ADDR;
+    export function SW10Address(SW10_ADDR: SW10_ADDR = 1): void {
+        SW10_I2C_ADDR = SW10_ADDR;
     }
 
     /**
@@ -58,5 +58,4 @@ namespace SW10 {
     export function getTempF(): number {
         return (((getTempC() * 18) / 10) + 32);
     }
-}
-
+9
