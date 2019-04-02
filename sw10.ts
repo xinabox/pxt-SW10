@@ -58,4 +58,4 @@ namespace SW10 {
     export function getTempF(): number {
         return (((getTempC() * 18) / 10) + 32);
     }
-9
+}
