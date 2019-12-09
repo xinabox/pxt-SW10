@@ -1,7 +1,7 @@
 {
-    "name": "pxt-SW10",
+    "name": "SW10",
     "version": "0.0.1",
-    "description": "MakeCode Package for the ☒SW10",
+    "description": "XinaBox SW10 Temperature Sensor",
     "license": "MIT",
     "dependencies": {
         "core": "*"
