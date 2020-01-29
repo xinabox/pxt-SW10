@@ -1,14 +1,16 @@
 {
     "name": "SW10",
-    "version": "0.0.1",
-    "description": "XinaBox SW10 Temperature Sensor",
+    "version": "0.0.2",
+    "description": "XinaBox SW10 Temperature Sensor: Temperature",
     "license": "MIT",
     "dependencies": {
-        "core": "*"
+        "core": "*",
+        "xinabox-cs11": "*"
     },
     "files": [
         "sw10.ts",
         "README.md"
     ],
-    "public": true
+    "public": true,
+	"preferredEditor": "blocksprj"
 }
