@@ -4,13 +4,12 @@
     "description": "XinaBox SW10 Temperature Sensor: Temperature",
     "license": "MIT",
     "dependencies": {
-        "core": "*",
-        "xinabox-cs11": "*"
+        "core": "*"
     },
     "files": [
         "sw10.ts",
         "README.md"
     ],
     "public": true,
-	"preferredEditor": "blocksprj"
+    "preferredEditor": "blocksprj"
 }
