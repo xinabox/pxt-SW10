@@ -1,5 +1,8 @@
-[![GitHub Issues](https://img.shields.io/github/issues/xinabox/pxt-SW10.svg)](https://github.com/xinabox/pxt-SW10/issues) ![GitHub Commit](https://img.shields.io/github/last-commit/xinabox/pxt-SW10) ![Maintained](https://img.shields.io/maintenance/yes/2020) ![Build status badge](https://github.com/xinabox/pxt-SW10/workflows/MakeCode/badge.svg)
-
+[![GitHub Issues](https://img.shields.io/github/issues/xinabox/pxt-SW10.svg)](https://github.com/xinabox/pxt-SW10/issues) 
+![GitHub Commit](https://img.shields.io/github/last-commit/xinabox/pxt-SW10) 
+![Maintained](https://img.shields.io/maintenance/yes/2020) 
+![Build status badge](https://github.com/xinabox/pxt-SW10/workflows/maker/badge.svg)
+![Build status badge](https://github.com/xinabox/pxt-SW10/workflows/microbit/badge.svg)
 # pxt-SW10
 MakeCode package for the ☒SW10 - beta
 
